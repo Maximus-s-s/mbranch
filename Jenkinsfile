@@ -19,7 +19,7 @@ pipeline {
          steps {
             script {
                sh 'echo "Hello from Build 3"'
-               echo "${evn.gitBranch} on ${BUILD_NUMBER}"
+               echo /*"${evn.gitBranch} on */ "${BUILD_NUMBER}"
             }   
          }
       }
