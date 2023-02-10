@@ -18,8 +18,8 @@ pipeline {
       stage('env') {
          steps {
             script {
-               echo "${evn.gitBranch} on ${BUILD_NUMBER}"
                sh 'echo "Hello from Build 3"'
+               echo "${evn.gitBranch} on ${BUILD_NUMBER}"
             }   
          }
       }
