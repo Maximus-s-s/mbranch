@@ -18,7 +18,7 @@ pipeline {
       stage('env') {
          steps {
             script {
-             //  echo "${evn.gitBranch}_${BUILD_NUMBER}"
+               echo "${evn.gitBranch}"  // _${BUILD_NUMBER}"
             }   
          }
       }
