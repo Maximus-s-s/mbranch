@@ -11,5 +11,12 @@ pipeline {
             sh 'echo "Hello from Build 2"'
          }
       }
+      stage('Build 3') {
+         steps {
+            script {
+               echo "${evn.gitBranch}_${BUILD_NUMBER}"
+            }   
+         }
+      }
    }
 }
