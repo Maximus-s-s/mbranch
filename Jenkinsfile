@@ -3,7 +3,7 @@ pipeline {
    stages {
       stage('Build 4') {
          steps {
-            sh 'echo "Hello from Build 4"'
+            sh 'echo "Hello from Build 4 demo multibranches"'
          }
       }
    }
